@@ -6,9 +6,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel&family=DM+Sans:opsz@9..40&family=Lora&family=Montserrat&family=Poppins:wght@300;400&family=Rubik&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;800&family=DM+Sans:opsz@9..40&family=Lora&family=Montserrat&family=Poppins:wght@300;400&family=Rubik&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Iconic Icon  -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -23,7 +25,7 @@
     <div id="container" class="container">
       <!-- Header  -->
       <div class="flex-row">
-        <h2 id="logo" class="textColor">Colorlib</h2>
+        <h2  id="logo" class="textColor">Colorlib</h2>
 
         <div class="twitter">
           <a href="https://twitter.com/yagyaraj234" target="_blank">
@@ -40,9 +42,11 @@
 
       <div class="font-md">
         <div class="font">
-          <div><p id="font" class="font-size">Cinzel</p>
-            <span id="selected-range">32px</span></div>
-          
+          <div>
+            <p id="font" class="font-size">Cinzel</p>
+            <span id="selected-range">48px</span>
+          </div>
+
           <select name="font-option" id="select">
             <option value="Poppins">Poppins</option>
             <option value="Cinzel">Cinzel</option>
@@ -58,11 +62,11 @@
             id="font-range"
             type="range"
             name=""
-            value="32"
+            value="48"
             min="4"
-            max="72"
+            max="100"
           />
-          <p>72</p>
+          <p>100</p>
         </div>
       </div>
 
@@ -81,41 +85,45 @@
           <!-- // Colour Range  -->
           <div class="ranges">
             <div>
-              <p class="temp" id="colorBox">Hue 0&deg;</p>
+              <span class="temp" id="hueTextColor">Hue 0</span
+              ><span>&deg;</span>
               <input
                 type="range"
                 name="hue"
-                id="hue"
+                id="hueColor"
                 min="0"
                 max="360"
+                value="0"
                 class="inputbox rangeline"
-                style="color: aqua"
               />
             </div>
             <div>
-              <p class="temp">Saturation 0</p>
+              <p class="temp" id="saturationTextColor">Saturation 70</p>
               <input
                 type="range"
                 name="saturation"
-                id="saturation"
+                id="saturationColor"
                 min="0"
                 max="100"
+                value="70"
                 class="inputbox rangeline"
               />
             </div>
             <div>
-              <p class="temp">Light 0</p>
+              <p class="temp" id="lightTextColor">Light 50</p>
               <input
                 type="range"
                 name="light"
-                id="light"
+                id="lightColor"
                 min="0"
                 max="100"
+                value="50"
                 class="inputbox rangeline"
               />
             </div>
           </div>
         </div>
+
         <!-- background  color -->
         <div class="background-color box">
           <p class="head text">Background Color</p>
@@ -127,37 +135,40 @@
           </div>
           <div class="ranges">
             <div>
-              <p class="temp">Hue 0&deg;</p>
+              <span class="temp" id="hueTextBg">Hue 0</span><span>&deg;</span>
               <input
                 type="range"
                 name="hue"
-                id="hue"
+                id="hueBg"
                 min="0"
                 max="360"
+                value="0"
                 class="inputbox rangeline"
               />
             </div>
 
             <div>
-              <p class="temp">Saturation 0</p>
+              <p class="temp" id="saturationTextBg">Saturation 50</p>
               <input
                 type="range"
                 name="saturation"
-                id="saturation"
+                id="saturationBg"
                 min="0"
                 max="100"
+                value="50"
                 class="inputbox rangeline"
               />
             </div>
 
             <div>
-              <p class="temp">Light 0</p>
+              <p class="temp" id="lightTextBg">Light 50</p>
               <input
                 type="range"
                 name="light"
-                id="light"
+                id="lightBg"
                 min="0"
                 max="100"
+                value="50"
                 class="inputbox rangeline"
               />
             </div>
