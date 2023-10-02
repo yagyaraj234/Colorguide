@@ -1,0 +1,179 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=DM+Sans:opsz@9..40&family=Lora&family=Montserrat&family=Poppins:wght@300;400&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Colorlib</title>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <!-- Header  -->
+      <div class="flex-row">
+        <h2 id="logo" class="textColor">Colorlib</h2>
+
+        <div class="twitter">
+          <a href="https://twitter.com/yagyaraj234" target="_blank">
+            <ion-icon
+              name="logo-twitter"
+              size="large"
+              class="twitter"
+            ></ion-icon>
+          </a>
+        </div>
+      </div>
+
+      <!-- Font Selection -->
+
+      <div class="font-md">
+        <div class="font">
+          <div><p id="font" class="font-size">Cinzel</p>
+            <span id="selected-range">32px</span></div>
+          
+          <select name="font-option" id="select">
+            <option value="Poppins">Poppins</option>
+            <option value="Cinzel">Cinzel</option>
+            <option value="Monteserrat">Monteserrat</option>
+            <option value="DMSans">DM Sans</option>
+            <option value="Rubik">Rubik</option>
+            <option value="Lora">Lora</option>
+          </select>
+        </div>
+        <div class="font-range">
+          <p>4</p>
+          <input
+            id="font-range"
+            type="range"
+            name=""
+            value="32"
+            min="4"
+            max="72"
+          />
+          <p>72</p>
+        </div>
+      </div>
+
+      <!-- Font Colour && Background Colour -->
+
+      <div class="boxes">
+        <!-- font colors -->
+        <div class="colors box">
+          <p class="head text">Colour</p>
+          <div class="colourbox">
+            <p class="colorname">#125cdb</p>
+            <div style="float: right" class="copy">
+              <ion-icon name="copy-outline"></ion-icon>
+            </div>
+          </div>
+          <!-- // Colour Range  -->
+          <div class="ranges">
+            <div>
+              <p class="temp" id="colorBox">Hue 0&deg;</p>
+              <input
+                type="range"
+                name="hue"
+                id="hue"
+                min="0"
+                max="360"
+                class="inputbox rangeline"
+                style="color: aqua"
+              />
+            </div>
+            <div>
+              <p class="temp">Saturation 0</p>
+              <input
+                type="range"
+                name="saturation"
+                id="saturation"
+                min="0"
+                max="100"
+                class="inputbox rangeline"
+              />
+            </div>
+            <div>
+              <p class="temp">Light 0</p>
+              <input
+                type="range"
+                name="light"
+                id="light"
+                min="0"
+                max="100"
+                class="inputbox rangeline"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- background  color -->
+        <div class="background-color box">
+          <p class="head text">Background Color</p>
+          <div class="colourbox">
+            <p class="colorname">#fcfcfc</p>
+            <div style="float: right" class="copy">
+              <ion-icon name="copy-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="ranges">
+            <div>
+              <p class="temp">Hue 0&deg;</p>
+              <input
+                type="range"
+                name="hue"
+                id="hue"
+                min="0"
+                max="360"
+                class="inputbox rangeline"
+              />
+            </div>
+
+            <div>
+              <p class="temp">Saturation 0</p>
+              <input
+                type="range"
+                name="saturation"
+                id="saturation"
+                min="0"
+                max="100"
+                class="inputbox rangeline"
+              />
+            </div>
+
+            <div>
+              <p class="temp">Light 0</p>
+              <input
+                type="range"
+                name="light"
+                id="light"
+                min="0"
+                max="100"
+                class="inputbox rangeline"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // const bgColor = (document.getElementById(
+      //   "container"
+      // ).style.backgroundColor = "yellow");
+
+      const textColor = (document.getElementById("container").style.color =
+        "#125cdb");
+    </script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
