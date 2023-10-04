@@ -3,7 +3,7 @@
 ## This website allows users to preview how text would look using different font families, font colors, and background colors.
 ## Demo
 ## A live demo is available at:
-https://font-color-previewer.com
+https://colorguide.netlify.app
 
 # Features
 ## Preview text styling with various font families, colors, and backgrounds
