@@ -25,15 +25,14 @@
     <div id="container" class="container">
       <!-- Header  -->
       <div class="flex-row">
-        <h2  id="logo" class="textColor">Colorlib</h2>
+        <h2 id="logo" class="textColor">Colorlib</h2>
 
-        <div class="twitter">
+        <div class="">
           <a href="https://twitter.com/yagyaraj234" target="_blank">
-            <ion-icon
-              name="logo-twitter"
-              size="large"
-              class="twitter"
-            ></ion-icon>
+            <ion-icon name="logo-twitter" class="icon"></ion-icon>
+          </a>
+          <a href="https://github.com/yagyaraj234" target="_blank">
+            <ion-icon name="logo-github" class="icon"></ion-icon>
           </a>
         </div>
       </div>
@@ -47,7 +46,7 @@
             <span id="selected-range">48px</span>
           </div>
 
-          <select name="font-option" id="select">
+          <select class="select" name="font-option" id="select">
             <option value="Poppins">Poppins</option>
             <option value="Cinzel">Cinzel</option>
             <option value="Monteserrat">Monteserrat</option>
@@ -77,8 +76,8 @@
         <div class="colors box">
           <p class="head text">Colour</p>
           <div class="colourbox">
-            <p class="colorname">#125cdb</p>
-            <div style="float: right" class="copy">
+            <p class="colorname" id="textHex">#125cdb</p>
+            <div id="textCopy" style="float: right" class="copy">
               <ion-icon name="copy-outline"></ion-icon>
             </div>
           </div>
@@ -128,8 +127,8 @@
         <div class="background-color box">
           <p class="head text">Background Color</p>
           <div class="colourbox">
-            <p class="colorname">#fcfcfc</p>
-            <div style="float: right" class="copy">
+            <p class="colorname" id="bgHex">#fcfcfc</p>
+            <div id="bgCopy" style="float: right" class="copy">
               <ion-icon name="copy-outline"></ion-icon>
             </div>
           </div>
